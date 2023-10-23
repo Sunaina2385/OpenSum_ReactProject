@@ -1,0 +1,46 @@
+.mainDiv{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width:100vw;
+    height:auto;
+}
+
+.mainDiv>p{
+    text-align: center;
+}
+
+.FooterSection{
+    display: flex;
+    justify-items: center;
+    margin:40px;
+    justify-content: center;
+    /* align-content: center; */
+    /* background-color: black; */
+    width:100vw;
+    /* color:white */
+}
+
+.FooterSection>div{
+    margin: 50px;
+}
+
+.section>h4{
+    font-weight:bolder;
+    margin-top: 20px;
+}
+
+.sectionlogo{
+    display: flex;
+    flex-direction: column;
+    /* justify-items: center; */
+    /* align-items: center; */
+}
+
+.sectionlogo>div{
+    display: flex;
+    /* flex-direction: column; */
+    justify-items: center;
+    align-items: center;
+}
+

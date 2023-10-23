@@ -7,7 +7,19 @@ function TextToPDFConverter({text}) {
   const downloadPDF = () => {
     const content = text;
     const pdf = new jsPDF();
-    pdf.text(content, 10, 10); // You can adjust the position (10, 10) as needed
+    const x = 10; // Adjust the x-coordinate
+    const y = 20; // Adjust the y-coordinate
+
+    const maxWidth = 190;
+
+    // Split the content into an array of lines based on the maxWidth
+    const textLines = pdf.splitTextToSize(content, maxWidth);
+  
+    // Add each line to the PDF
+    textLines.forEach((line, index) => {
+      pdf.text(line, x, y + index * 10); // Adjust the y-coordinate to control line spacing
+    });
+    
     pdf.save('converted.pdf');
   };
 

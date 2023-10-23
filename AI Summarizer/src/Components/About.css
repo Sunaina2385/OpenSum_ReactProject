@@ -1,0 +1,129 @@
+.aboutSection{
+    text-align: center;
+    margin-top:50px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.feaSection{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.featureSec{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    /* align-items: center; */
+    height:340px;
+    text-align:left;
+    width:30%;
+    margin: 50px;
+    border-radius:10%;
+    justify-content: flex-start;
+
+}
+
+.featureSec>h1{
+    font-weight: bolder;
+    font-size:21px;
+    margin-top:30px;
+    justify-content: flex-start;
+    /* text-align: left; */
+    margin-left:20px;
+    
+}
+
+.featureSec:hover{
+    background-color: black;
+    color:white;
+    transform: scale(1.1,1.1);
+}
+
+.featureSec>h1,p:hover{
+    /* font-weight: bold; */
+    background: linear-gradient(45deg, #ff6b6b, #6b6bff);
+    -webkit-background-clip: text;
+    background-clip: text;   
+    color: transparent;
+}
+
+.videosec{
+    margin:20px;
+}
+
+.videosec>h1{
+    font-size:30px;
+    margin:20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.featureSec>p{
+    font-size:16px;;
+    margin-top:20px;
+    text-align: left;
+    margin-left:20px;
+    margin-right:30px;
+}
+
+.extraFea{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: white; */
+    width: 100%;
+    margin-top: 30px;
+    /* margin-bottom:30px; */
+}
+
+.extrafeah1{
+    font-size:30px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.extrafeadiv{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    margin:30px;
+    height:200px;
+    width:40%;
+    text-align: center;
+    background-image: linear-gradient(135deg, #3494e6, #ec6ead);
+    background-clip: text;
+    /* -webkit-background-clip: text; */
+    /* text-fill-color: transparent; */
+}
+
+.extrafeadivcomplex{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin:70px;
+    height: 100px;
+    width:40%;
+    text-align: center;
+}
+
+.joke{
+    text-align: center; 
+}
+
+.heading{
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #000, #444, #888, #ccc, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: transparent;
+    /* color: transparent; */
+}
+

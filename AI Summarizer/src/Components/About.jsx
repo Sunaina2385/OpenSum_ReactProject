@@ -1,5 +1,8 @@
 import React,{useState} from 'react'
 import axios from 'axios';
+import './About.css';
+import Footer from './Footer';
+import VideoPlayer from './video';
 
 const About = () => {
 
@@ -59,38 +62,62 @@ const About = () => {
     
     <h1 className='head_text'>Summarize Articles with <br className='max-md:hidden'/><span className='orange_gradient'>OpenSum</span></h1>
 
-            <div className='bg-white rounded-lg shadow-lg p-8 w-3/4 text-center my-7'>
+            <div className='aboutSection'>
                 <p className='text-lg text-gray-700 mb-4'>
-                OpenSum is a web application that summarizes articles and translates
+                {/* OpenSum is a web application that summarizes articles and translates
                 them into different languages. It also provides a few other features like
                 getting jokes and facts. Later on, I will add more features like the
                 ability to download summarized text as a PDF and upload PDF files for
-                summarization.
+                summarization. */}
+                Sharly AI summarizer is an advanced tool powered by artificial intelligence technology that provides concise summaries of any document or article. No more trawling through pages of information to extract key points. Just upload your document - and let the AI do the work. The AI summarizer reads through the text, identifies the main themes and the most essential details, and produces a summary that captures the document's essence. This AI tool simplifies document comprehension, allowing you to save time and effort. With Sharly's AI summarizer, the tedious process of summarizing lengthy documents is the past.
                 </p>
-
-            <div className='flex justify-center space-x-4'>
-                <div className='border border-gray-300 p-4 rounded-lg'>
-                    <button
-                    onClick={displayJoke}
-                    className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded'
-                    >
-                    Make Me Laugh
-                    </button>
-                    <p className='mt-2 text-gray-700'>{Joke}</p>
+            </div>
+            
+            <div className='feaSection'>
+                <div className='featureSec'>
+                    <h1>Accurate AI Summary</h1>
+                    <p>Sharly's AI summarizer is not just a simple AI tool; it's a sophisticated technology capable of discerning key points from complex documents accurately. Whether you're dealing with a research paper or a business report, you can rely on Sharly for a comprehensive, accurate summary.</p>
                 </div>
-
-                <div className='border border-gray-300 p-4 rounded-lg'>
-                    <button
-                    onClick={displayFact}
-                    className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded'
-                    >
-                    Get Me Facts
-                    </button>
-                    <p className='mt-2 text-gray-700'>{Fact}</p>
-                    </div>
+                <div className='featureSec'>
+                    <h1>Time Efficiency</h1>
+                    <p>Using Sharly's AI to summarize articles or documents greatly cuts down the time you spend on reading and understanding lengthy texts. This saved time can then be redirected to other productive tasks, boosting your overall efficiency.</p>
+                </div>
+                <div className='featureSec'>
+                    <h1>Versatility and Convenience</h1>
+                    <p>Sharly supports various document formats, including .pdf, .docx, .doc, .txt, .csv, .rtf, and .html files. This means you can utilize the AI summary feature across a wide range of documents, providing a consistent and convenient solution for your information extraction needs.</p>
                 </div>
             </div>
+            
+        
 
+            <div className='videosec'>
+                <h1 className='orange_gradient'>How Does This Summarizing Tool Work?</h1>
+                <VideoPlayer/>
+            </div>
+
+            <div className='extraFea'>
+                <div className='extrafeah1'>
+                    <h1 className='orange_gradient'>Get Your Fun On</h1>
+                </div>
+
+                <div className='extrafeadivcomplex'>
+                    <div className='border border-gray-300 p-4 rounded-lg m-5 extrafeadiv'>
+                        <div onClick={displayJoke}>
+                            <p className='heading'>Make Me Laugh</p>
+                        </div>
+                        <p className='mt-2 text-gray-700 joke' >{Joke}</p>
+                    </div>
+
+                    <div className='border border-gray-300 p-4 rounded-lg extrafeadiv'>
+                        <div onClick={displayFact}>
+                            <p className='heading'>Get Me Facts</p>    
+                        </div>
+                        <p className='mt-2 text-gray-700 joke'>{Fact}</p>
+                    </div>
+
+                </div>
+            </div>
+            <Footer/>
         {/* <video controls>
             <source src="./video/video.mp4" type="video/mp4" />
         </video> */}

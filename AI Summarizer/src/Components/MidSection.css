@@ -1,0 +1,71 @@
+table,td,tr{
+    border:2px solid grey;
+    border-radius: 10px;
+    margin-top:50px;
+    height:60px;
+    width:700px;
+    text-align: center;
+    /* border-radius:100px; */
+}
+
+.section1{
+    width:100vw;
+    background-color: white;  
+    background-image: url("https://assets.quillbot.com/images/theme/light/summarizer/mobileTop.png");   
+    background-position:center bottom;
+    margin-top:80px;
+}
+
+.midSection{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top:25px;
+    margin-bottom:25px;
+}
+
+.headingStyle{
+    color:black;
+    font-weight:200px;
+    font-size:30px;
+}
+
+.paraStyle{
+    text-align: center;
+    margin-left:250px;
+    margin-right:250px;
+    margin-top: 15px;
+}
+
+.section2{
+    width:100vw;
+    background-color:#E6E6E6;  
+}
+
+.mainSection{
+    margin-top:50px;
+    margin-bottom:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconSection>div{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin:50px;
+    text-align: center;
+    font-weight:500;
+}
+
+

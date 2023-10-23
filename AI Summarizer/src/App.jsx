@@ -4,6 +4,8 @@ import Hero from './Components/Hero';
 import Btn from './Components/Btn';
 import {Routes,Route} from 'react-router-dom';
 import './App.css';
+import Footer from './Components/Footer'; 
+
 
 const App = () => {
   return (
